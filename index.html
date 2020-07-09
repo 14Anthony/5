@@ -22,9 +22,9 @@
     <div class="container" id="mainContainer">
         <!-- Timeblocks go here -->
         <div class="input-group row">
-            <span class="input-group-text time-block hour col-1">9 am</span>
-            <textarea class="form-control" id="nine" aria-label="With textarea"></textarea>
-            <button class="btn btn-outline-secondary input-group-append" type="button" id="button-addon2">Button</button>
+            <span class="input-group-text time-block hour col-1" id="hour">9 am</span>
+            <textarea class="form-control" id="nine" aria-label="With textarea">SOMETHING</textarea>
+            <button class="btn btn-outline-secondary input-group-append" type="button" id="button-addon2" onclick="javascript:localStorage.setItem(hour.text,nine.text)">Button</button>
         </div>
 
         <div class="input-group row">
