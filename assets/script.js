@@ -1,16 +1,15 @@
 $(document).ready(function() {
-    //use moment js to display date and time. moment js. docs. 
-    //  Per JJ, on 7/7 preclass office hours, to satisfy the option  of happening to grab the if statement from the book Jquery, we need to discuss an options 
-    // const formControl = $('.form-control');
-    const formNine = $('#nine')
-    const formTen = $('#ten')
-    const formEleven = $('#eleven')
-    const formTwelve = $('#twelve')
-    const formOne = $('#one')
-    const formTwo = $('#two')
-    const formThree = $('#three')
-    const formFour = $('#four')
-    const formFive = $('#five')
+    //--------formatting of the Clock database------------
+    const formNine = $('#nine');
+    const formTen = $('#ten');
+    const formEleven = $('#eleven');
+    const formTwelve = $('#twelve');
+    const formOne = $('#one');
+    const formTwo = $('#two');
+    const formThree = $('#three');
+    const formFour = $('#four');
+    const formFive = $('#five');
+
     const format = "LLLL";
 
     const result = moment().format(format);
@@ -23,6 +22,16 @@ $(document).ready(function() {
     // append date to currentDay
 
     const currentDay = $("#currentDay").append(result);
+    //use moment js to display date and time. moment js. docs. 
+    //  Per JJ, on 7/7 preclass office hours, to satisfy the option  of happening to grab the if statement from the book Jquery, we need to discuss an options 
+    // const formControl = $('.form-control');
+    //-------------Pulling IDs for the Local Storage ----------------
+
+
+    //-------------Pulling ID for the if Statements-----------------
+
+
+
     // Second homework in a row , I don't know how to store to local storage.  I am unable to get any of these to work.  
     //-----------------------------------------------------------attempts at local storage------------------------------------------------------------------------
 
@@ -30,6 +39,10 @@ $(document).ready(function() {
 
     // thank you!!
 
+    // COMMON LANGUAGE:::::::::
+
+    // When the website is opened I would like to collect whatever information is stored in local storage, and place it in the appropriate containers.description
+    // ON the button click or enter is pressed (keyup), I would like to collect the text inputed in the contanier and place it in the local storage.   
 
 
     // Here is a function that detects whether localStorage is both supported and available:
@@ -299,5 +312,23 @@ $(document).ready(function() {
         formFive.addClass('future');
     }
 
+
+    const counter = $('.form-control');
+    const endorse = $('.btn');
+
+    let count = localStorage.getItem("count");
+
+    counter.textContent = count;
+
+    // const notes = JSON.parse(localStorage.getItem(".form-control")) || [];
+    // console.log(notes);
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+
+        counter.text = count;
+
+        JSON.stringify(localStorage.setItem("count", count))
+    });
 
 });
