@@ -1,7 +1,7 @@
-//use moment js to display date and time. moment js. docs. 
 $(document).ready(function() {
+    //use moment js to display date and time. moment js. docs. 
     //  Per JJ, on 7/7 preclass office hours, to satisfy the option  of happening to grab the if statement from the book Jquery, we need to discuss an options 
-    const formControl = $('.form-control');
+    // const formControl = $('.form-control');
     const formNine = $('#nine')
     const formTen = $('#ten')
     const formEleven = $('#eleven')
@@ -33,8 +33,9 @@ $(document).ready(function() {
 
     // const timed = function(time, formControl) {
 
-    // if statements for time, and Form Control,  I had  
-    /* if (currentDay >time){
+    // if statements for time, and Form Control,  I had nobody in the study group seems to like this code.  ???? WHY?////????
+
+    /* if (currentDay >time)
         $('form-control').addClass('past');
     }
     if ( time === 9){
@@ -43,13 +44,11 @@ $(document).ready(function() {
     if ( time < 9){
         $('#9').addClass('future');
     }*/
-    // result()
-    // let container = $('#mainContainer');
-    // container.empty();
-    // current = 13
+    // result()   THIS NIS NOGOOD
+    // current = 13  testing to see if the grid changes at 1 oclock___________________________
     if (JSON.parse(current) > 9) {
         formNine.addClass('past');
-        // formNine.removeClass('present');
+        // formNine.removeClass('present'); testing to see if the add class will change the class to the css 
         // console.log(current);
     }
     if (JSON.parse(current) === 9) {
@@ -82,10 +81,10 @@ $(document).ready(function() {
         formTwelve.addClass('past');
     }
     if (JSON.parse(current) === 12) {
-        formEleven.addClass('present');
+        formTwelve.addClass('present');
     }
     if (JSON.parse(current) < 12) {
-        formEleven.addClass('future');
+        formTwelve.addClass('future');
     }
     if (JSON.parse(current) > 13) {
         formOne.addClass('past');
@@ -132,9 +131,9 @@ $(document).ready(function() {
     if (JSON.parse(current) < 17) {
         formFive.addClass('future');
     }
-
-    const notes = JSON.parse(localStorage.getItem('notes')) || [];
-    console.log(notes);
+    // Second homework in a row , I don't know how to store to local storage
+    // const notes = JSON.parse(localStorage.getItem('notes')) || [];
+    // console.log(notes);
 
 
 
