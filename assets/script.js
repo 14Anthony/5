@@ -338,7 +338,7 @@ $(document).ready(function() {
             // console.log(ten);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", ten).append)
+        JSON.stringify(localStorage.setItem("count", ten))
     });
 
     $(".btn").on("click", function() {
@@ -347,7 +347,7 @@ $(document).ready(function() {
             // console.log(eleven);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", eleven).append)
+        JSON.stringify(localStorage.setItem("count", eleven))
     });
 
     $(".btn").on("click", function() {
@@ -356,7 +356,7 @@ $(document).ready(function() {
             // console.log(twelve);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", twelve).append)
+        JSON.stringify(localStorage.setItem("count", twelve))
     });
 
     $(".btn").on("click", function() {
@@ -365,7 +365,7 @@ $(document).ready(function() {
             // console.log(one);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", one).append)
+        JSON.stringify(localStorage.setItem("count", one))
     });
 
     $(".btn").on("click", function() {
@@ -374,7 +374,7 @@ $(document).ready(function() {
             // console.log(two);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", two).append)
+        JSON.stringify(localStorage.setItem("count", two))
     });
 
     $(".btn").on("click", function() {
@@ -383,7 +383,7 @@ $(document).ready(function() {
             // console.log(three);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", three).append)
+        JSON.stringify(localStorage.setItem("count", three))
     });
 
     $(".btn").on("click", function() {
@@ -392,7 +392,7 @@ $(document).ready(function() {
             // console.log(four);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", four).append)
+        JSON.stringify(localStorage.setItem("count", four))
     });
 
     $(".btn").on("click", function() {
@@ -401,7 +401,7 @@ $(document).ready(function() {
             // console.log(five);
         counter.text(count);
 
-        JSON.stringify(localStorage.setItem("count", five).append)
+        JSON.stringify(localStorage.setItem("count", five))
     });
     //-------------------------------------------------------------------------------------------------------------------------------------------------------
 
