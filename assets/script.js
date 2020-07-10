@@ -118,7 +118,7 @@ $(document).ready(function() {
     // Specifi
 
 
-
+    //THIS DIDN"T WORK EITHER>  it runs into an error from the javascript.min.js
 
     // const notes = $(".form-control");
     // const notes = document.querySelectorAll(".form_control")
@@ -174,6 +174,8 @@ $(document).ready(function() {
     //   // textContent property to update
     //   // document.getElementById('new').textContent = localStorage.getItem('counter');
     // });
+
+    // THIS DIDN"T WORK EITHER>  it runs into an error from the javascript.min.js
     // // addButton.addEventListener("click", addButton);
     // // event listner executes addButton for us
     // // addButton(event)  <-- done by event listener
@@ -312,23 +314,112 @@ $(document).ready(function() {
         formFive.addClass('future');
     }
 
-
+    // ----------------------------------This didn't work, althought I got it up to the storage, just not the content--------------------------
     const counter = $('.form-control');
     const endorse = $('.btn');
 
     let count = localStorage.getItem("count");
 
-    counter.textContent = count;
+    counter.text(count);
 
-    // const notes = JSON.parse(localStorage.getItem(".form-control")) || [];
-    // console.log(notes);
 
     $(".btn").on("click", function() {
         // console.log("FOOOY")
+        const nine = $('#nine').val().trim()
+            // console.log(nine);
+        counter.text(count);
 
-        counter.text = count;
-
-        JSON.stringify(localStorage.setItem("count", count))
+        JSON.stringify(localStorage.setItem("count", nine))
     });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const ten = $('#ten').val().trim()
+            // console.log(ten);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", ten).append)
+    });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const eleven = $('#eleven').val().trim()
+            // console.log(eleven);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", eleven).append)
+    });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const twelve = $('#twelve').val().trim()
+            // console.log(twelve);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", twelve).append)
+    });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const one = $('#one').val().trim()
+            // console.log(one);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", one).append)
+    });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const two = $('#two').val().trim()
+            // console.log(two);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", two).append)
+    });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const three = $('#three').val().trim()
+            // console.log(three);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", three).append)
+    });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const four = $('#four').val().trim()
+            // console.log(four);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", four).append)
+    });
+
+    $(".btn").on("click", function() {
+        // console.log("FOOOY")
+        const five = $('#five').val().trim()
+            // console.log(five);
+        counter.text(count);
+
+        JSON.stringify(localStorage.setItem("count", five).append)
+    });
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    //save txtarea input local storage ..  THIS DIDN"T WORK EITHER>  it runs into an error from the javascript.min.js
+    // function SaveBtn() {
+    //     const input_textarea = document.querySelector('#result');
+    //     const save_button = document.querySelector('#sBtn');
+
+    //     save_button.addEventListener('click', updateOutput);
+
+    //     input_textarea.textContent = localStorage.getItem('content');
+    //     input_textarea.value = localStorage.getItem('content');
+
+    //     function updateOutput() {
+    //         Del();
+    //         localStorage.setItem('content', input_textarea.value);
+    //         input_textarea.textContent = input_textarea.value;
+    //     }
+    // }
 
 });
